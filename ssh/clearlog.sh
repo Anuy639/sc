@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/anuybazoelk
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -51,4 +51,4 @@ echo > /var/log/syslog
 echo > /var/log/btmp
 echo > /var/log/messages
 echo > /var/log/debug
-echo -e "${PURPLE}By RIDWAN - STORE"
+echo -e "${PURPLE}By Nyari - Gratisan"
