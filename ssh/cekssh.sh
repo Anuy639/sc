@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/anuybazoelk
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -90,6 +90,6 @@ echo "----------------------------------------------";
         cat /tmp/vpn-login-udp.txt
 fi
 echo "----------------------------------------------";
-echo "Script By RIDWAN - STORE"
+echo "Script By Nyari - Gratisan"
 echo "";
 
