@@ -1,6 +1,6 @@
 
 
-# ☁️ *Project RIDWAN-STORE™ version 3.01* ☁️
+# ☁️ *NYARI GRATISAN PROJECT™ version 0.01* ☁️
 
 Project Fog is a VPS AutoScript for Ubuntu and Debian Distros. Comes with pre-installed tunneling software. See below for a list of pre-installed programs.
 
@@ -13,8 +13,8 @@ Project Fog is a VPS AutoScript for Ubuntu and Debian Distros. Comes with pre-in
 ###
 ## Supported Distros
 
-- Ubuntu 18. 20 and above.
-- Debian 9, 10, 11, and above.
+- Ubuntu 18. 20
+- Debian 10
 
 
 
@@ -22,7 +22,7 @@ Project Fog is a VPS AutoScript for Ubuntu and Debian Distros. Comes with pre-in
 
 ## Installation
 
-_It will install the version of RIDWAN-STORE™ that is compatible with your VPS's operating system and version._
+_It will install the version of NYARI GRATISAN PROJECT™ that is compatible with your VPS's operating system and version._
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/76937659/153705486-44e6c1b2-74fa-4d44-be1c-36c8fdb83331.gif"/>
@@ -42,7 +42,7 @@ _The version can be manually chosen for your virtual private server if universal
 
 
 ## Command: _menu_ 
-`Use this to access PROJECT RIDWAN Menu through vps terminal`
+`Use this to access NYARI GRATISAN PROJECT through vps terminal`
 #
 
     
@@ -190,9 +190,9 @@ Server Information & Other Features
  ## _Author_
 
 _If you have any feedback, please reach me out:_
-- _www.facebook.com/kornips_
-- _www.phcorner.net/members/blackestsaint.455497/_
-- _https://t.me/blackestsaint_
+- _www.facebook.com/anuybazoelk639_
+- _www.youtube.com/@nyarigratisan_
+- _https://t.me/anuybazoelk_
 
 
   <p align="center"> <img src="https://user-images.githubusercontent.com/76937659/153705961-79f5a170-5563-4f90-9423-f45c7011ac3f.gif" width="200" height="180" /> </p>
