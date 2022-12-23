@@ -81,7 +81,17 @@ echo -e "❇️ BadVpn        : 7100-7200-7300"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Payload Websocket Tls ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "GET wss://bug.com [protocol][crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "GET ws://${domain} HTTP/1.1\r
+Host: bug.com\r
+Connection: keep-alive\r
+Proxy-Connection: keep-alive\r
+X-Forwarded-For: ${domain}\r
+X-Online-Host: ${domain}\r
+X-Forward-Host: ${domain}\r
+User-Agent: [ua]\r
+Upgrade: Websocket\r
+\r
+CONNECT [host_port] [protocol][crlf][crlf]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Payload Websocket No Tls ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
