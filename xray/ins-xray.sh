@@ -473,8 +473,8 @@ END
 # Installing Trojan Go Service
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
-Description=Trojan-Go Service By RIDWAN
-Documentation=https://t.me/Akbar218
+Description=Trojan-Go Service By Nyari Gratisan
+Documentation=https://t.me/anuybazoelk
 After=network.target nss-lookup.target
 
 [Service]
