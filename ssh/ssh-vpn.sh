@@ -51,12 +51,12 @@ ver=$VERSION_ID
 
 #detail nama perusahaan
 country=ID
-state=Indonesia
+state=KalimantanSelatan
 locality=Indonesia
-organization=ridwanstorevpn
-organizationalunit=ridwanstorevpn
-commonname=ridwanstorevpn
-email=akbarssh21@gmail.com
+organization=nyarigratisan
+organizationalunit=nyarigratisan
+commonname=anuybazoelk639
+email=anuybazoelk639@gmail.com
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://${akbarvpn}/password"
@@ -305,8 +305,8 @@ END
 cat > /etc/systemd/system/stunnel5.service << END
 [Unit]
 Description=Stunnel5 Service
-Documentation=https://stunnel.org
-Documentation=https://github.com/Akbar218
+Documentation=https://t.me/anuybazoelk
+Documentation=https://github.com/muhammadnoor674
 After=syslog.target network-online.target
 
 [Service]
