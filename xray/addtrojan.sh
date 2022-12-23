@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/anuybazoelk
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -67,4 +67,4 @@ echo -e "Expired  : $exp"
 echo -e "=========================="
 echo -e "Link TR  : ${trojanlink}"
 echo -e "=========================="
-echo -e "Script By Ridwan Store"
+echo -e "Script By Nyari Gratisan"
