@@ -23,7 +23,7 @@ echo -e "${ORANGE}3❖» Check Login L2tp                                       
 echo -e "${ORANGE}4❖» MENU                                                "
 echo -e "${GREEN}5❖» Exit                                            "
 echo -e "${LIGHT}©-------------------------------------------------------------©"
-echo -e "\E[44;1;39m            ⇱ Sc By Ridwan ⇲             \E[0m"
+echo -e "\E[44;1;39m            ⇱ Sc By FREEFINDER ⇲             \E[0m"
 echo -e "${LIGHT}©-------------------------------------------------------------©"
 read -p "Select From Options [ 1 - 7 ] : " menu
 echo -e ""
