@@ -27,7 +27,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 #warna
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m          ⇱ Menu SSH Ridwan ⇲          \E[0m"
+echo -e "\E[44;1;39m          ⇱ Menu SSH NyariGratisan ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "❇️ 1) Create SSH & OpenVPN Account                                          "
 echo -e "❇️ 2) Create SSH & OpenVPN Trial                                             "
@@ -42,7 +42,7 @@ echo -e "❇️ 10) Restart All Service                                         
 echo -e "❇️ 11) Menu Utama                                            "
 echo -e "❇️ 12) EXIT                                                        "
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m            ⇱ Script By Ridwan ⇲             \E[0m"
+echo -e "\E[44;1;39m            ⇱ Script By NyariGratisan ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 read -p "Select From Options [ 1 - 12 ] : " menu
 echo -e ""
