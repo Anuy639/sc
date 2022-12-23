@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/anuybazoelk
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -62,4 +62,4 @@ echo "=========================="
 echo "Username  : $user"
 echo "Expired   : $exp"
 echo "=========================="
-echo "Script By RIDWAN STORE"
+echo "Script By Nyari Gratisan"
