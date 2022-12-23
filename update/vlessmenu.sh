@@ -27,7 +27,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 #warna
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m          ⇱ Menu VLESS Ridwan ⇲          \E[0m"
+echo -e "\E[44;1;39m          ⇱ Menu VLESS NyariGratisan ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "❇️ 1) Create Account Vless Websocket                                          "
 echo -e "❇️ 2) Delete Account Vless Websocket                                             "
@@ -37,7 +37,7 @@ echo -e "❇️ 5) Perbarui Certificate Vless                                   
 echo -e "❇️ 6) Menu Utama                                            "
 echo -e "❇️ 7) EXIT                                                        "
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m            ⇱ Script By Ridwan ⇲             \E[0m"
+echo -e "\E[44;1;39m            ⇱ Script By NyariGratisan ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 read -p "Select From Options [ 1 - 6 ] : " menu
 echo -e ""
