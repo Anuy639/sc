@@ -1,6 +1,6 @@
 #!/bin/bash
-# Proxy For Edukasi & Imclass
-# My Telegram : https://t.me/Akbar218
+# youtube.com/@nyarigratisan
+# My Telegram : https://t.me/anuybazoelk
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -68,8 +68,8 @@ chmod +x /usr/local/bin/ws-ovpn
 # Installing Service
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
-Description=Python Proxy Mod By LamVpn
-Documentation=https://t.me/LamVpn
+Description=Python Proxy Mod By anuybazoelk
+Documentation=https://t.me/anuybazoelk
 After=network.target nss-lookup.target
 
 [Service]
@@ -96,8 +96,8 @@ chmod +x /usr/local/bin/ws-tls
 # Installing Service
 cat > /etc/systemd/system/ws-tls.service << END
 [Unit]
-Description=Python Proxy Mod By geovpn
-Documentation=https://t.me/geovpn
+Description=Python Proxy Mod By anuybazoelk
+Documentation=https://t.me/anuybazoelk
 After=network.target nss-lookup.target
 
 [Service]
