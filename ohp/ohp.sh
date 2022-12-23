@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ohp Script
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/anuybazoelk
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -43,7 +43,7 @@ cp ohpserver /usr/local/bin/ohpserver
 cat > /etc/systemd/system/ssh-ohp.service << END
 [Unit]
 Description=SSH OHP Redirection Service
-Documentation=https://t.me/Akbar218
+Documentation=https://t.me/anuybazoelk
 After=network.target nss-lookup.target
 
 [Service]
@@ -64,7 +64,7 @@ END
 cat > /etc/systemd/system/dropbear-ohp.service << END
 [Unit]]
 Description=Dropbear OHP Redirection Service
-Documentation=https://t.me/Akbar218
+Documentation=https://t.me/anuybazoelk
 After=network.target nss-lookup.target
 
 [Service]
@@ -85,7 +85,7 @@ END
 cat > /etc/systemd/system/openvpn-ohp.service << END
 [Unit]]
 Description=OpenVPN OHP Redirection Service
-Documentation=https://t.me/Akbar218
+Documentation=https://t.me/anuybazoelk
 After=network.target nss-lookup.target
 
 [Service]
