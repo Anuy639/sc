@@ -36,7 +36,7 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 </p>
 
 
-_The version can be manually chosen for your virtual private server if universal installation fails._ See [Ridwan Fog Versions_](docs/fog-versions.md).
+_The version can be manually chosen for your virtual private server if universal installation fails._ See [ARProject Fog Versions_](docs/fog-versions.md).
 ##
 
 
