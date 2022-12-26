@@ -81,7 +81,7 @@ echo -e "❇️ BadVpn        : 7100-7200-7300"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Payload Websocket Tls ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "CONNECT ws://${domain} HTTP/1.1\r
+echo -e "HEAD ws://${domain} HTTP/1.1\r
 Host: bug.com\r
 Connection: keep-alive\r
 Proxy-Connection: keep-alive\r
@@ -95,7 +95,7 @@ CONNECT [host_port] [protocol][crlf][crlf]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Payload Websocket No Tls ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "CONNECT / HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Created       : $hariini ⇲          \E[0m"
 echo -e "\E[44;1;39m          ⇱ Expired       : $expi ⇲          \E[0m"
