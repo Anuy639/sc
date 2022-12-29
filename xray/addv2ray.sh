@@ -59,7 +59,7 @@ cat>/etc/xray/vmess-$user-tls.json<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/ARProject",
+      "path": "/DrgTech",
       "type": "none",
       "host": "",
       "tls": "tls"
@@ -101,7 +101,7 @@ echo -e "❇️ User ID     : ${uuid}"
 echo -e "❇️ Alter ID    : 0"
 echo -e "❇️ Security    : auto"
 echo -e "❇️ Network     : ws"
-echo -e "❇️ Path        : /ARProject"
+echo -e "❇️ Path        : /DrgTech"
 echo -e "❇️ Created     : $hariini"
 echo -e "❇️ Expired     : $exp"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
