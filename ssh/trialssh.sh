@@ -82,7 +82,7 @@ echo -e "❇️ BadVpn        : 7100-7200-7300"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Payload Websocket Tls ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "HEAD ws://${domain} HTTP/1.1\r\nHost: bug.com\r\nConnection: keep-alive\r\nProxy-Connection: keep-alive\r\nX-Forwarded-For: ${domain}\r\nX-Online-Host: ${domain}\r\nX-Forward-Host: ${domain}\r\nUpgrade: Websocket\r\n\r\n
+echo -e "HEAD ws://${domain} HTTP/1.1\r\nHost: bug.com\r\nConnection: keep-alive\r\nProxy-Connection: keep-alive\r\nX-Forwarded-For: ${domain}\r\nX-Online-Host: ${domain}\r\nX-Forward-Host: ${domain}\r\nUpgrade: Websocket\r\n\r\n"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Payload Websocket No Tls ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
