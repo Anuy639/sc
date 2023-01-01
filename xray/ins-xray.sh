@@ -355,8 +355,8 @@ END
 # / / Installation Xray Service
 cat > /etc/systemd/system/xray.service << END
 [Unit]
-Description=Xray Service By Akbar Maulana
-Documentation=https://t.me/Akbar218
+Description=Xray Service By Nyari Gratisan
+Documentation=https://t.me/anuybazoelk
 After=network.target nss-lookup.target
 
 [Service]
