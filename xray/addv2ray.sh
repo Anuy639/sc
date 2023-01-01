@@ -74,7 +74,7 @@ cat>/etc/xray/vmess-$user-nontls.json<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/ARProject",
+      "path": "/DrgTech",
       "type": "none",
       "host": "",
       "tls": "none"
