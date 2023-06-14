@@ -91,9 +91,9 @@ wsdrop=$(systemctl status ws-nontls | grep Active | awk '{print $3}' | cut -d "(
 wsovpn=$(systemctl status ws-ovpn | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 #wsopen=$(systemctl status ws-openssh | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 osslh=$(systemctl status sslh | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
-ohp=$(systemctl status dropbear-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
-ohq=$(systemctl status openvpn-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
-ohr=$(systemctl status ssh-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+#ohp=$(systemctl status dropbear-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+#ohq=$(systemctl status openvpn-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+#ohr=$(systemctl status ssh-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 
 # COLOR VALIDATION
 RED='\033[0;31m'
@@ -282,25 +282,25 @@ else
 fi
 
 # STATUS OHP DROPBEAR
-if [[ $ohp == "running" ]]; then 
-   sohp=" ${GREEN}Running ${NC}( No Error )${NC}"
-else
-   sohp="${RED}  Not Running ${NC}  ( Error )${NC}"
-fi
+#if [[ $ohp == "running" ]]; then 
+#   sohp=" ${GREEN}Running ${NC}( No Error )${NC}"
+#else
+#   sohp="${RED}  Not Running ${NC}  ( Error )${NC}"
+#fi
 
 # STATUS OHP OpenVPN
-if [[ $ohq == "running" ]]; then 
-   sohq=" ${GREEN}Running ${NC}( No Error )${NC}"
-else
-   sohq="${RED}  Not Running ${NC}  ( Error )${NC}"
-fi
+#if [[ $ohq == "running" ]]; then 
+#   sohq=" ${GREEN}Running ${NC}( No Error )${NC}"
+#else
+#   sohq="${RED}  Not Running ${NC}  ( Error )${NC}"
+#fi
 
 # STATUS OHP SSH
-if [[ $ohr == "running" ]]; then 
-   sohr=" ${GREEN}Running ${NC}( No Error )${NC}"
-else
-   sohr="${RED}  Not Running ${NC}  ( Error )${NC}"
-fi
+#if [[ $ohr == "running" ]]; then 
+#   sohr=" ${GREEN}Running ${NC}( No Error )${NC}"
+#else
+#   sohr="${RED}  Not Running ${NC}  ( Error )${NC}"
+#fi
 
 # STATUS SERVICE WEBSOCKET OPENSSH
 if [[ $wsopen == "running" ]]; then 
@@ -383,9 +383,9 @@ echo -e "❇️ Trojan GO               :$status_trgo"
 echo -e "❇️ Websocket TLS           :$swstls"
 echo -e "❇️ Websocket None TLS      :$swsdrop"
 echo -e "❇️ Websocket Ovpn          :$swsovpn"
-echo -e "❇️ OHP Dropbear            :$sohp"
-echo -e "❇️ OHP OpenVPN             :$sohq"
-echo -e "❇️ OHP SSH                 :$sohr"
+#echo -e "❇️ OHP Dropbear            :$sohp"
+#echo -e "❇️ OHP OpenVPN             :$sohq"
+#echo -e "❇️ OHP SSH                 :$sohr"
 echo -e "❇️ SSL / SSH Multiplexer   :$sosslh"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
