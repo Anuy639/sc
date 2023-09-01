@@ -119,7 +119,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/DrgTech",
+          "path": "/",
           "headers": {
             "Host": ""
           }
@@ -148,7 +148,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/DrgTech",
+          "path": "/",
           "headers": {
             "Host": ""
           }
