@@ -51,9 +51,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user ilu.rianasw@gmail.com
-from ilu.rianasw@gmail.com
-password Alwayslovingyou 
+user cindyherdiana22@gmail.com
+from cindyherdiana22@gmail.com
+password Anuy@639#Bazoelk 
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
