@@ -1,72 +1,64 @@
 #!/bin/bash
-# My Telegram : https://t.me/anuybazoelk
-# ==========================================
-# Color
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHT='\033[0;37m'
-# ==========================================
-# Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://anuy639.github.io/izin | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/Anuybazoelk639"
-echo -e "${NC}${LIGHT}WhatsApp : 085349326511"
-echo -e "${NC}${LIGHT}WhatsApp : 081774970898"
-echo -e "${NC}${LIGHT}Youtube : youtube.com/@nyarigratisan"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/anuybazoelk"
-echo -e "${NC}${LIGHT}Telegram : https;//t.me/r1f4n_112"
-exit 0
-fi
-# Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/Anuy639/sc/main/backup"
+dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+#########################
 
-curl https://rclone.org/install.sh | bash
-printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://${akbarvpn}/rclone.conf"
-git clone  https://github.com/magnific0/wondershaper.git
+# // Export Banner Status Information
+export EROR="[${RED} EROR ${NC}]"
+export INFO="[${YELLOW} INFO ${NC}]"
+export OKEY="[${GREEN} OKEY ${NC}]"
+export PENDING="[${YELLOW} PENDING ${NC}]"
+export SEND="[${YELLOW} SEND ${NC}]"
+export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
+
+# // Export Align
+export BOLD="\e[1m"
+export WARNING="${RED}\e[5m"
+export UNDERLINE="\e[4m"
+clear
+MYIP=$(curl -sS ipv4.icanhazip.com)
+clear
+#fi
+#sleep 3
+#echo -e "
+#"
+date
+echo ""
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Checking... "
+sleep 2
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Download & Install rclone... "
+curl -fsSL https://rclone.org/install.sh | bash > /dev/null 2>&1
+printf "q\n" | rclone config > /dev/null 2>&1
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Downloading rclone config ... "
+wget -q -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/Anuy639/sc/main/backup/rclone.conf"
+git clone https://github.com/magnific0/wondershaper.git &> /dev/null
 cd wondershaper
-make install
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Installing wondershaper... "
+make install > /dev/null 2>&1
 cd
-rm -rf wondershaper
+rm -rf wondershaper > /dev/null 2>&1
 echo > /home/limit
-apt install msmtp-mta ca-certificates bsd-mailx -y
-cat<<EOF>>/etc/msmtprc
-defaults
-tls on
-tls_starttls on
-tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
-account default
-host smtp.gmail.com
-port 587
-auth on
-user cindyherdiana22@gmail.com
-from cindyherdiana22@gmail.com
-password Anuy@639#Bazoelk 
-logfile ~/.msmtp.log
-EOF
-chown -R www-data:www-data /etc/msmtprc
-cd /usr/bin
-wget -O autobackup "https://${akbarvpn}/autobackup.sh"
-wget -O backup "https://${akbarvpn}/backup.sh"
-wget -O restore "https://${akbarvpn}/restore.sh"
-wget -O strt "https://${akbarvpn}/strt.sh"
-wget -O limitspeed "https://${akbarvpn}/limitspeed.sh"
-chmod +x autobackup
-chmod +x backup
-chmod +x restore
-chmod +x strt
-chmod +x limitspeed
-cd
+pkgs='msmtp-mta ca-certificates bsd-mailx'
+if ! dpkg -s $pkgs > /dev/null 2>&1; then
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Installing... "
+apt install -y $pkgs > /dev/null 2>&1
+else
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Already Installed... "
+fi
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Creating service... "
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Downloading files... "
+wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/Anuy639/sc/main/backup/backup.sh" && chmod +x /usr/bin/backup
+wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/Anuy639/sc/main/backup/restore.sh" && chmod +x /usr/bin/restore
+
+service cron restart > /dev/null 2>&1
+
 rm -f /root/set-br.sh

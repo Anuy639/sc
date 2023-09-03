@@ -1,9 +1,8 @@
 #!/bin/bash
-# My Telegram : https://t.me/anuybazoelk
 # ==========================================
 # Color
 RED='\033[0;31m'
-NC='\033[0m'
+NC='\033[0;37m'
 GREEN='\033[0;32m'
 ORANGE='\033[0;33m'
 BLUE='\033[0;34m'
@@ -12,49 +11,55 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://anuy639.github.io/izin | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/Anuybazoelk639"
-echo -e "${NC}${LIGHT}WhatsApp : 085349326511"
-echo -e "${NC}${LIGHT}WhatsApp : 081774970898"
-echo -e "${NC}${LIGHT}Youtube : youtube.com/@nyarigratisan"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/anuybazoelk"
-echo -e "${NC}${LIGHT}Telegram : https;//t.me/r1f4n_112"
-exit 0
-fi
 clear
-echo "This Feature Can Only Be Used According To Vps Data With This Autoscript"
-echo "Please input link to your vps data backup file."
-echo "You can check it on your email if you run backup data vps before."
+echo "Fitur Ini Hanya Bisa Digunakan Sesuai Data Vps Dengan Autoscript Ini"
+echo "Silakan masukkan tautan ke file cadangan data vps Anda "
+echo "Anda dapat memeriksanya di email Anda jika Anda menjalankan backup data vps sebelumnya "
+echo " "
 read -rp "Link File: " -e url
 wget -O backup.zip "$url"
 unzip backup.zip
 rm -f backup.zip
 sleep 1
 echo Start Restore
+rm -f /root/backup/backup.zip &> /dev/null
+sleep 1
 cd /root/backup
-cp passwd /etc/
-cp group /etc/
-cp shadow /etc/
-cp gshadow /etc/
-cp -r wireguard /etc/
-cp chap-secrets /etc/ppp/
-cp passwd1 /etc/ipsec.d/passwd
-cp ss.conf /etc/shadowsocks-libev/ss.conf
-cp -r anuy639 /var/lib/
-cp -r sstp /home/
-cp -r xray /etc/
-cp -r trojan-go /etc/
-cp -r shadowsocksr /usr/local/
-cp -r public_html /home/vps/
-cp crontab /etc/
-strt
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring passwd data..."
+sleep 1
+cp /root/backup/passwd /etc/ &> /dev/null
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring group data..."
+sleep 1
+cp /root/backup/group /etc/ &> /dev/null
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring shadow data..."
+sleep 1
+cp /root/backup/shadow /etc/ &> /dev/null
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring gshadow data..."
+sleep 1
+cp /root/backup/gshadow /etc/ &> /dev/null
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring chap-secrets data..."
+sleep 1
+cp /root/backup/chap-secrets /etc/ppp/ &> /dev/null
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring passwd1 data..."
+sleep 1
+cp /root/backup/passwd1 /etc/ipsec.d/passwd &> /dev/null
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring ss.conf data..."
+sleep 1
+cp /root/backup/ss.conf /etc/shadowsocks-libev/ss.conf &> /dev/null
+echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restoring admin data..."
+sleep 1
+cp -r /root/backup/akbarstorevpn /var/lib/ &> /dev/null
+cp -r /root/backup/.acme.sh /root/ &> /dev/null
+cp -r /root/backup/akbarstorevpn /etc/ &> /dev/null
+cp -r /root/backup/xray /etc/ &> /dev/null
+cp -r /root/backup/public_html /home/vps/ &> /dev/null
+cp -r /root/backup/crontab /etc/ &> /dev/null
+cp -r /root/backup/cron.d /etc/ &> /dev/null
+rm -rf /root/backup &> /dev/null
 rm -rf /root/backup
+echo -e "$COLOR1│${NC}  [ ${GREEN}INFO${NC} ] • Done... Successfully"
 rm -f backup.zip
 echo Done
+echo ""
+read -n 1 -s -r -p "   Press any key to back on menu"
+menu
