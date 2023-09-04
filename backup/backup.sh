@@ -44,7 +44,7 @@ url=$(rclone link dr:backup/$IP-$date.zip)
 id=(`echo $url | grep '^https' | cut -d'=' -f2`)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
 echo -e "
-Detail Backup Arya Blitar
+Detail Backup by BZ Official Store
 ==================================
 IP VPS        : $IP
 Link Backup   : $link
@@ -55,7 +55,7 @@ rm -rf /root/backup
 rm -r /root/$IP-$date.zip
 clear
 echo -e "
-Detail Backup Arya Blitar
+Detail Backup by BZ Official Store
 ==================================
 IP VPS        : $IP
 Link Backup   : $link
