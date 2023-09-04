@@ -58,7 +58,7 @@ hariini=`date -d "0 days" +"%Y-%m-%d"`
 expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m     ⇱ Informasi SSH & OpenVPN ⇲          \E[0m"
+echo -e "\E[44;1;39m     ⇱ SSH PREMIUM BZ OFFICIAL STORE ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 #echo - #"❇️ IP/Host       : $IP"
 echo -e "❇️ Domain        : ${domain}"
