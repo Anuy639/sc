@@ -8,7 +8,7 @@ wh="\033[0m"
 
 echo -e "$y-------------------------------------------------------------$wh"
 echo -e "$y             Telegram : https://t.me/anuybazoelk $wh"
-echo -e "$y           Premium Auto Script By NYARIGRATISAN $wh"
+echo -e "$y           Premium Auto Script By BZ OFFICIAL STORE $wh"
 echo -e "$y-------------------------------------------------------------$wh"
 echo ""
 echo -e "$y SSH & OpenVPN $wh"
